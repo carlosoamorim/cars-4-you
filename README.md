@@ -1,3 +1,11 @@
+\## ▶️ Run the notebook in Google Colab
+
+
+
+\[Open in Colab](https://colab.research.google.com/github/rmmandrade/ml2526/blob/main/Group57.ipynb)
+
+
+
 Execution Requirements and Notes (Important)
 
 
