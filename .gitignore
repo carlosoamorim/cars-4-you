@@ -1,0 +1,16 @@
+# Python / Jupyter
+__pycache__/
+.ipynb_checkpoints/
+
+# Data files (não subir dados grandes)
+train.csv
+test.csv
+*.csv
+
+# Model artifacts
+*.pkl
+*.joblib
+
+# OS
+.DS_Store
+Thumbs.db
