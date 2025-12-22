@@ -1,5 +1,5 @@
 
-# For running the notebook without collab:
+# For running the notebook without Google Colab:
 
 1) `pip install -r requirements.txt`
 
