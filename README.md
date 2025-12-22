@@ -5,13 +5,15 @@
 
 2) working directory MUST contain "train.csv" and "test.csv
 
-project/
-│
-├── requirements.txt
-├── train.csv
-├── test.csv
-├── your_notebook.ipynb
-└── README.md
+    ```
+    project/
+    │
+    ├── requirements.txt
+    ├── train.csv
+    ├── test.csv
+    ├── your_notebook.ipynb
+    └── README.md
+    ```
 
 
 
