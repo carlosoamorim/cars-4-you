@@ -1,11 +1,11 @@
 Run the notebook in Google Colab
 
-Open in Colab
+1) Open in Colab
 https://colab.research.google.com/github/rmmandrade/ml2526/blob/main/Group57.ipynb
 
 
 
-Execution Requirements and Notes (Important)
+2)Execution Requirements and Notes (Important)
 
 
 
@@ -13,7 +13,7 @@ This project was developed and executed in Google Colab due to its computational
 
 
 
-Hardware Requirements
+3) Hardware Requirements
 
 
 
@@ -25,7 +25,7 @@ Execution on local machines may fail or be significantly slower depending on ava
 
 
 
-Required Input Files
+4) Required Input Files
 
 
 
@@ -41,13 +41,17 @@ test.csv — loaded in Section 8 (Final Model Evaluation and Inference)
 
 
 
+requirements.txt
+
+
+
 The datasets (train.csv and test.csv) are included in the repository and should be loaded by the pipeline
 
 in Section 1 (training data) and Section 8 (test data), respectively.
 
 
 
-Execution Guidance
+5) Execution Guidance
 
 
 
@@ -67,7 +71,7 @@ Create an analytics interface that returns a prediction when new input data is p
 
 
 
-Notes for Evaluation
+6) Notes for Evaluation
 
 
 
