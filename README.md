@@ -5,7 +5,7 @@ https://colab.research.google.com/github/rmmandrade/ml2526/blob/main/Group57.ipy
 
 
 
-2)Execution Requirements and Notes (Important)
+2) Execution Requirements and Notes (Important)
 
 
 
