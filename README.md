@@ -1,8 +1,7 @@
 
 # For running the notebook without collab:
 
-1) ```bash
-pip install -r requirements.txt
+1) `pip install -r requirements.txt`
 
 2) working directory MUST contain "train.csv" and "test.csv
 
