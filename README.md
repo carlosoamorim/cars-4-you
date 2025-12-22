@@ -1,5 +1,5 @@
 
-# For running the notebook without Google Colab:
+# For those running the notebook without Google Colab:
 
 1) `pip install -r requirements.txt`
 
@@ -17,7 +17,7 @@
 
 
 
-# If you Run the notebook in Google Colab (recommended):
+# If you run the notebook in Google Colab (recommended):
 
 1) Open in Colab
 https://colab.research.google.com/github/rmmandrade/ml2526/blob/main/Group57.ipynb
