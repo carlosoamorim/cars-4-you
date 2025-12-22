@@ -1,4 +1,22 @@
-Run the notebook in Google Colab
+
+# For running the notebook without collab:
+
+1) ```bash
+pip install -r requirements.txt
+
+2) working directory MUST contain "train.csv" and "test.csv
+
+project/
+│
+├── requirements.txt
+├── train.csv
+├── test.csv
+├── your_notebook.ipynb
+└── README.md
+
+
+
+# If you Run the notebook in Google Colab (recommended):
 
 1) Open in Colab
 https://colab.research.google.com/github/rmmandrade/ml2526/blob/main/Group57.ipynb
@@ -80,4 +98,5 @@ The pipeline was executed end-to-end in Colab using the configuration above.
 
 
 Any errors encountered when running locally are likely due to insufficient memory or missing input files.
+
 
