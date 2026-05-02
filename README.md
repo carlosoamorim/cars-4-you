@@ -1,8 +1,8 @@
-# Cars 4 You — Used Car Price Prediction
+# Cars 4 You - Used Car Price Prediction
 
 **Regression pipeline for predicting used car resale prices, built for a fictional UK car resale company.**
 
-The core challenge was not modelling — it was data quality. Brand and model name fields were filled in by sellers and contained extensive misspellings and inconsistencies (e.g. `"Aud"`, `"udi"`, `"AUD"` all mapping to `"Audi"`). A hybrid fuzzy string matching approach was developed to standardise these before any modelling work began.
+The core challenge was not modelling, it was in fact data quality. Brand and model name fields were filled in by sellers and contained extensive misspellings and inconsistencies (e.g. `"Aud"`, `"udi"`, `"AUD"` all mapping to `"Audi"`). A hybrid fuzzy string matching approach was developed to standardise these before any modelling work began.
 
 ---
 
@@ -15,7 +15,7 @@ The core challenge was not modelling — it was data quality. Brand and model na
 | Histogram Gradient Boosting | £1,120 | £1,371 | £1,308 |
 | Random Forest | £736 | £1,393 | £1,338 |
 | Extra Trees | £526 | £1,310 | £1,293 |
-| **Ensemble (0.2 ET + 0.4 RF + 0.4 HGB)** | — | — | **£1,263** |
+| **Ensemble (0.2 ET + 0.4 RF + 0.4 HGB)** | - | - | **£1,263** |
 
 Final placement: **upper quartile of the Kaggle leaderboard.**
 
@@ -40,13 +40,13 @@ Validation and Kaggle scores are closely aligned across all models, confirming t
 | paintQuality% | Mechanic's assessment of paint & hull |
 | previousOwners | Number of prior registered owners |
 | hasDamage | Boolean damage marker (seller-reported) |
-| **price** | Target — purchase price in £ |
+| **price** | Target - purchase price in £ |
 
 ---
 
 ## Pipeline
 
-### 1. Data Cleaning — Fuzzy String Matching
+### 1. Data Cleaning - Fuzzy String Matching
 
 The most significant preprocessing challenge. Brand and model fields contained hundreds of misspellings, abbreviations, and casing inconsistencies filled in by sellers.
 
@@ -60,7 +60,7 @@ Year was transformed from registration date to **car age** (`2020 - year`), with
 
 ### 2. Preprocessing
 
-- **Outlier handling:** MAD-based robust z-scores (threshold = 3.5) with automatic winsorization bounds — chosen over IQR because most features have skewed distributions even after transformation
+- **Outlier handling:** MAD-based robust z-scores (threshold = 3.5) with automatic winsorization bounds - chosen over IQR because most features have skewed distributions even after transformation
 - **Skew correction:** automatic log transform applied to features with |skew| > 1
 - **Missing values:** median/mode imputation fitted on training fold only
 - **Encoding:** One-Hot Encoding for categorical features
@@ -85,7 +85,7 @@ Five models evaluated using holdout split (70/30), assessed on MAE:
 - Random Forest Regressor
 - Extra Trees Regressor
 
-Histogram Gradient Boosting identified as the best individual model based on bias-variance tradeoff — negligible train/val gap at competitive MAE.
+Histogram Gradient Boosting identified as the best individual model based on bias-variance tradeoff - negligible train/val gap at competitive MAE.
 
 ### 5. Ensemble
 
@@ -95,7 +95,7 @@ Weighted average of the three best individual models:
 Final prediction = 0.2 × ExtraTrees + 0.4 × RandomForest + 0.4 × HistGradientBoosting
 ```
 
-Weights were tuned empirically against Kaggle scores. Achieved **MAE £1,263** — best result overall.
+Weights were tuned empirically against Kaggle scores. Achieved **MAE £1,263** - best result overall.
 
 ### 6. Gradio Interface (Open-Ended Section)
 
@@ -108,7 +108,7 @@ An interactive prediction dashboard built with Gradio. Given a set of car inputs
 ```
 cars4you-price-prediction/
 │
-├── Grupo57_notebook.ipynb    # Full pipeline: cleaning → preprocessing → modelling → interface
+├── models.ipynb              # Full pipeline: cleaning → preprocessing → modelling → interface
 ├── train.csv                 # Training data
 ├── test.csv                  # Test data (no price labels)
 ├── requirements.txt
@@ -144,5 +144,5 @@ RANDOM_SEED = 1907
 
 Carlos Amorim · Rodrigo Andrade · Francisco Cerdeira · António Varela
 
-*MSc. Data Science & Advanced Analytics — Nova IMS, 2024/2025*  
-*Machine Learning — Group 57*
+*MSc. Data Science & Advanced Analytics - NOVA IMS, 2024/2025*  
+*Machine Learning - Group 57*
