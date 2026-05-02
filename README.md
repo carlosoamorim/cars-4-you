@@ -142,7 +142,7 @@ RANDOM_SEED = 1907
 
 ## Authors
 
-Carlos Amorim · Rodrigo Andrade · Francisco Cerdeira · António Varela
+António Varela · Carlos Amorim · Francisco Cerdeira · Rodrigo Andrade
 
-*MSc. Data Science & Advanced Analytics - NOVA IMS, 2024/2025*  
+*MSc. Data Science & Advanced Analytics - NOVA IMS, 2025/2026*  
 *Machine Learning - Group 57*
